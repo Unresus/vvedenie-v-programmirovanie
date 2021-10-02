@@ -1,0 +1,32 @@
+a=int(input("vvedite storony priamoygol'nika "))
+b=int(input("vvedite druguiy storony priamoygol'nika "))
+P=2*(a+b)
+S=a*b
+print("PLOSHAD'=",S,'perimetr=',P)
+d=int(input("vvedite diametr okryzhnosti "))
+L=3.14*d
+print("dlina okryxhnosti=" ,L)
+q=int(input('a = '))
+w=int(input('b = '))
+S=(q+w)/2
+print('srednee arifmeticheskoe = ',S)
+t=int(input('pervoe nenylevoe chislo = '))
+y=int(input('vtoroe nenylevoe chislo = '))
+y*=y
+t*=t
+C=y+t
+R=t-y
+O=y*t
+H=t/y
+print('SUMMA= ',C,"raznost' = ",R,'proizvedenie = ',O,'chasnoe = ',H)
+t1=int(input('pervoe nenylevoe chislo = '))
+y1=int(input('vtoroe nenylevoe chislo = '))
+if t1<0:
+    t1*=-1
+if y1<0:
+    y1*=-1
+C1=y1+t1
+R1=t1-y1
+O1=y1*t1
+H1=t1/y1
+print('SUMMA = ',C1,"raznost' = ",R1,'proizvedenie = ',O1,'chasnoe = ',H1)
