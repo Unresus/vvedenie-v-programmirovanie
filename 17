@@ -1,0 +1,82 @@
+m=[]
+x=1
+n=int(input('vvedite kolichestvo elementov massiva'))
+for i in range(n):
+    m.append(int(input()))
+print(m)
+k=int(input('vvedite k'))
+l=int(input('vvesite l'))
+while l>k:
+    m[l]+=m[l-x]
+    print(m[l])
+    x+=1
+    k+=1
+print(m[l]/x)
+
+
+
+m=[]
+n=int(input('vvedite kolichestvo elementov massiva'))
+for i in range(n):
+    m.append(int(input()))
+m.sort()
+o=len (m)-1
+for i in range(len(m)):
+    if m[o]-m[o-1] == m[o-1]-m[o-2]:
+        o-=1
+        if o==2:
+            print(m[o]-m[o-1])
+            break
+        
+    else:
+        print('nety')
+        break
+
+
+
+m=[]
+mc=[]
+x=1
+n=int(input('vvedite kolichestvo elementov massiva'))
+for i in range(n):
+    m.append(int(input()))
+y=len(m)
+while x<=y:
+    mc.append(m[x])
+    x+=2
+print(mc)
+print(min(mc))
+
+
+
+m=[]
+mc=[]
+x=1
+n=int(input('vvedite kolichestvo elementov massiva'))
+for i in range(n):
+    m.append(int(input()))
+y=len(m)
+print(m)
+maxx=max(m)
+m.append(maxx+1)
+m.reverse()
+m.append(maxx+1)
+m.reverse()
+p=0
+while x<y+1:
+    if m[x-1]<m[x] or m[x]>m[x+1]:
+        mc.append(x)
+    x+=1
+mc.reverse()
+print('vot itog ----->',mc[0]-1)
+
+
+
+m=[]
+n=int(input('vvedite kolichestvo elementov massiva '))
+for i in range(n):
+    m.append(int(input()))
+for i in range(len(m)-1):
+    for k in range(i+1, len(m)):
+        if m[i] == m[k]:
+            print(i, k)
